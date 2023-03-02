@@ -16,5 +16,9 @@ insert into users(name,email,password,status) values
 		('Kirill', 'Kirill@gmail.com', '[qwe21', 4), 
 		('Yana', 'Yana@gmail.com', 'qweqwe22', 5);        
         select*from users;
+        select*from users where email like'%@gmail.com';
+        
+        update users set email='kirill@yandex.ru' where name='kirill';
+            select*from users where email like'%@gmail.com';
         
         
