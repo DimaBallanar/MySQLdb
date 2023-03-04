@@ -30,5 +30,7 @@ insert into book(Title,Author,price,amount) values
  select Min(price) as "минимальная цена" from book;
  select Max(price) as "максимальная цена" from book;
  select*from book order by id desc limit 1;
+ select*from book where price between 50 and 60 order by price limit 3;
+ 
  
  
