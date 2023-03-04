@@ -35,6 +35,16 @@ insert into book(Title,Author,price,amount) values
  select Author as "автор", Title as "название книги", price as "цена" from book where amount<10;
  select Author as "автор", Title as "название книги"  from book where (amount between 2 and 14) order by author desc , Title asc;
  
+ select Title, amount, amount*1.65 as "pack" from book ;
+ 
+ select*from book where Title like 'Б%';
+ 
+ select*from book where Author like 'Булгаков%' and Title like 'М%' order by Title asc;
+ 
+ select*from book where price between 40 and 50;
+ 
+ 
+ 
  
  
  
