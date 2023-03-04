@@ -31,6 +31,10 @@ insert into book(Title,Author,price,amount) values
  select Max(price) as "максимальная цена" from book;
  select*from book order by id desc limit 1;
  select*from book where price between 50 and 60 order by price limit 3;
+ select*from book where (price between 60 and 70) and author like 'Булгаков%' ;
+ select Author as "автор", Title as "название книги", price as "цена" from book where amount<10;
+ select Author as "автор", Title as "название книги"  from book where (amount between 2 and 14) order by author desc , Title asc;
+ 
  
  
  
