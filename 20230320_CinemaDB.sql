@@ -19,3 +19,8 @@ Docter", 2001, 92), ("В поисках немо", "Andrew Stanton", 2003, 107),
 ("Храбрая сердцем", "Brenda Chapman", 2012, 102), ("Университет монстров", "Dan
 Scanlon", 2013, 110);
 select*from movies;
+
+--  Вывести title каждого фильма с использованием псевдонимов
+select title "название_фильма" from movies;
+
+
