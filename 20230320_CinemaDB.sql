@@ -23,4 +23,11 @@ select*from movies;
 --  Вывести title каждого фильма с использованием псевдонимов
 select title "название_фильма" from movies;
 
+-- 4. Вывести title and director каждого фильма
+select title название_фильма, director режиссер from movies;
+
+-- 5. Вывести title and year каждого фильма, где title содержит подстроку “сто”
+select title название_фильмеца, director режиссер from movies
+where title like "%сто%";
+
 
