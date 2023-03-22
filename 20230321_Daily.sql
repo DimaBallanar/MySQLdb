@@ -49,5 +49,9 @@ select*from worker where id in(3,4,5,6,10);
 -- с 'eee', 'zzz' или 'ggg
 select*from worker where id in(3,5,6,10) and (email like 'eee%' or email like 'zzz%' or email like 'ggg%');
 
+select name,salary from worker inner join salary on salary.worker_id=worker.id;
+
+-- 5. Выберите неповторяющиеся зарплаты
+select distinct salary from salary;
 
 
