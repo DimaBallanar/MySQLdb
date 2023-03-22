@@ -56,3 +56,9 @@ select distinct salary from salary;
 
 -- 6. Выведите тех сотрудников, зарплаты которых > 1000
 select*from worker inner join salary on salary.worker_id=worker.id where salary.salary>1000;
+
+-- 7. Выведите сотрудников их зарплаты и месяцы
+select worker.*, salary.salary, month.title from worker inner join salary on salary.worker_id=worker.id
+inner join month on month.id=salary.month_id;
+
+
