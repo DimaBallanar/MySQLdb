@@ -61,4 +61,9 @@ select*from worker inner join salary on salary.worker_id=worker.id where salary.
 select worker.*, salary.salary, month.title from worker inner join salary on salary.worker_id=worker.id
 inner join month on month.id=salary.month_id;
 
+-- 8. Обновите имя у сотрудника id которого 1
+update worker set  name= 'ololo' where id=1;
+
+
+
 
