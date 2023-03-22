@@ -78,3 +78,10 @@ inner join film f
 on f.id=s.id_film
 group by f.id ;
 
+select f.name, sum(c.count_place*s.cost) выручка , sum(s.sold_seats*s.cost) максимум,sum(c.count_place*s.cost)-sum(s.sold_seats*s.cost) разница from seans s
+inner join cinema c
+on c.id=s.id_cinema
+inner join film f
+on f.id=s.id_film
+group by f.id ;
+
