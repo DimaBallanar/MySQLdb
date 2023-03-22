@@ -64,6 +64,8 @@ inner join month on month.id=salary.month_id;
 -- 8. Обновите имя у сотрудника id которого 1
 update worker set  name= 'ololo' where id=1;
 
+-- 9. Выведите полностью всех сотрудников и зарплаты которые имеются среднее 
+
 
 
 
