@@ -20,3 +20,12 @@ create table Orders(
 id int auto_increment not null,
 user_id int not null,
 adress varchar(50) not null,
+dateorder  date not null
+);
+
+create table OrderProduct(
+id int auto_increment,
+product_id int,
+countProduct int not null,
+doscont double not null
+);
