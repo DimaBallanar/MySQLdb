@@ -27,5 +27,6 @@ create table OrderProduct(
 id int auto_increment,
 product_id int,
 countProduct int not null,
-doscont double not null
+doscont double not null,
+foreign key (product_id) references products(id)
 );
